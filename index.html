@@ -1,150 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>AliDataLab | Data Analytics Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: #f4f6f8;
-      color: #333;
-      line-height: 1.6;
-    }
-    header {
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      color: #fff;
-      padding: 60px 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 42px;
-      letter-spacing: 1px;
-    }
-    header h2 {
-      margin-top: 10px;
-      font-weight: normal;
-      font-size: 20px;
-      color: #d1e8ff;
-    }
-    header p {
-      max-width: 700px;
-      margin: 20px auto 30px;
-      font-size: 18px;
-    }
-    .btn {
-      display: inline-block;
-      padding: 12px 28px;
-      border-radius: 30px;
-      background: #ffffff;
-      color: #203a43;
-      text-decoration: none;
-      font-weight: bold;
-      margin: 5px;
-      transition: 0.3s;
-    }
-    .btn:hover {
-      background: #d1e8ff;
-    }
-    section {
-      max-width: 1000px;
-      margin: auto;
-      padding: 60px 20px;
-    }
-    section h3 {
-      font-size: 28px;
-      margin-bottom: 20px;
-      color: #203a43;
-    }
-    .skills, .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    .card {
-      background: #fff;
-      padding: 25px;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    }
-    .card h4 {
-      margin-top: 0;
-      color: #203a43;
-    }
-    footer {
-      background: #203a43;
-      color: #fff;
-      text-align: center;
-      padding: 30px 20px;
-    }
-    footer a {
-      color: #d1e8ff;
-      text-decoration: none;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Tailwind -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="bg-gray-50 text-gray-800">
 
-<header>
-  <h1>AliDataLab</h1>
-  <h2>Data Analyst | Business Intelligence | SQL | Python</h2>
-  <p>
-    Data Analyst specializing in reporting, business intelligence, and database-driven analytics.
-    Transforming raw data into clear insights for better decision-making.
+<!-- ================= HEADER ================= -->
+<header class="bg-gradient-to-r from-indigo-600 to-purple-700 text-white pt-28 pb-20 text-center">
+  <h1 class="text-5xl font-bold mb-4">AliDataLab</h1>
+  <h2 class="text-2xl mb-6 opacity-90">
+    Data Analyst | Business Intelligence | SQL | Python
+  </h2>
+  <p class="max-w-3xl mx-auto text-lg opacity-85 mb-10">
+    Transforming raw data into actionable insights through reporting,
+    business intelligence, and database-driven analytics.
   </p>
-  <a href="#contact" class="btn">Contact Me</a>
-  <a href="#cv" class="btn">Download CV</a>
+
+  <div class="flex justify-center space-x-6">
+    <a href="#projects" class="bg-white text-purple-700 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition">
+      View My Work
+    </a>
+    <a href="#contact" class="border-2 border-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-purple-700 transition">
+      Contact Me
+    </a>
+  </div>
 </header>
 
-<section id="about">
-  <h3>About Me</h3>
-  <p>
-    I am a Data Analyst with strong experience in data analysis, SQL-based database analytics,
-    and business intelligence. I work with Excel, Power BI, SQL Server, and Python to clean,
-    analyze, visualize, and interpret data. My background in operations and administration
-    allows me to understand business needs and deliver practical, data-driven insights.
-  </p>
+<!-- ================= SKILLS ================= -->
+<section id="skills" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+    <h3 class="text-4xl font-bold text-center mb-14">Skills</h3>
+
+    <div class="grid md:grid-cols-3 gap-10">
+      <div class="bg-gray-50 p-8 rounded-lg shadow">
+        <h4 class="text-xl font-semibold mb-4">Core & Domain</h4>
+        <p>
+          Data Analysis, KPI Analysis, Business Understanding,
+          Performance Measurement, Forecasting, Insight Generation,
+          Problem Solving
+        </p>
+      </div>
+
+      <div class="bg-gray-50 p-8 rounded-lg shadow">
+        <h4 class="text-xl font-semibold mb-4">Technical</h4>
+        <p>
+          SQL Server (T-SQL), Relational Databases,
+          Python (Pandas, Matplotlib),
+          Excel (Power Query, DAX),
+          Power BI
+        </p>
+      </div>
+
+      <div class="bg-gray-50 p-8 rounded-lg shadow">
+        <h4 class="text-xl font-semibold mb-4">Tools & Platforms</h4>
+        <p>
+          Power BI, SQL Server, Microsoft Excel,
+          GitHub, Microsoft PL-300 & DP-300 Learning Paths
+        </p>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section id="skills">
-  <h3>Skills</h3>
-  <div class="skills">
-    <div class="card">
-      <h4>Core & Domain</h4>
-      <p>
-        Data Analysis, Business Understanding, KPI Analysis, Performance Measurement,
-        Insight Generation, Forecasting, Problem Solving
+<!-- ================= EXPERIENCE ================= -->
+<section id="experience" class="py-20 bg-gray-100">
+  <div class="max-w-5xl mx-auto px-6">
+    <h3 class="text-4xl font-bold text-center mb-14">Experience</h3>
+
+    <div class="mb-10">
+      <h4 class="text-xl font-semibold">
+        Administrative & Operations Assistant (Military Service)
+      </h4>
+      <span class="text-gray-600">2023 – 2024</span>
+      <p class="mt-3">
+        Managed administrative data, prepared operational and financial reports,
+        supported payroll processes, and delivered data-driven summaries
+        to management.
       </p>
     </div>
-    <div class="card">
-      <h4>Technical</h4>
-      <p>
-        SQL Server (T-SQL), Relational Databases, Python (Pandas, Matplotlib),
-        Excel (Power Query, DAX), Power BI
-      </p>
-    </div>
-    <div class="card">
-      <h4>Tools</h4>
-      <p>
-        Power BI, Microsoft Excel, SQL Server, Python,
-        Microsoft PL-300 & DP-300 Learning Paths
+
+    <div>
+      <h4 class="text-xl font-semibold">Surveying Specialist</h4>
+      <span class="text-gray-600">2021 – 2022</span>
+      <p class="mt-3">
+        Worked on surveying and mapping projects with strong focus on
+        data accuracy, validation, and real-world data handling.
       </p>
     </div>
   </div>
 </section>
 
-<section id="projects">
-  <h3>Projects</h3>
-  <div class="projects">
-    <div class="card">
-      <h4>Sales Performance Analysis</h4>
-      <p>
-        Built Excel and Power BI dashboards to analyze international sales data,
-        KPIs, trends, and performance metrics.
-      </p>
+<!-- ================= PROJECTS ================= -->
+<section id="projects" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+    <h3 class="text-4xl font-bold text-center mb-14">Projects</h3>
+
+    <div class="grid md:grid-cols-2 gap-12">
+
+      <!-- Project Card -->
+      <div class="bg-gray-50 rounded-lg shadow overflow-hidden">
+        <img src="https://via.placeholder.com/800x400?text=Sales+Dashboard"
+             alt="Sales Dashboard">
+        <div class="p-6">
+          <h4 class="text-xl font-semibold mb-3">Sales Performance Analysis</h4>
+          <p class="mb-4">
+            Excel and Power BI dashboards analyzing international sales data,
+            KPIs, trends, and performance metrics.
+          </p>
+          <a href="https://github.com/your-username/project-repo"
+             target="_blank"
+             class="text-purple-700 font-semibold hover:underline">
+            View Details →
+          </a>
+        </div>
+      </div>
+
+      <!-- Project Card -->
+      <div class="bg-gray-50 rounded-lg shadow overflow-hidden">
+        <img src="https://via.placeholder.com/800x400?text=Power+BI+Report"
+             alt="Power BI Report">
+        <div class="p-6">
+          <h4 class="text-xl font-semibold mb-3">Cyber Café Management Analysis</h4>
+          <p class="mb-4">
+            Operational and financial analysis using Excel and DAX
+            to track revenue, usage patterns, and efficiency.
+          </p>
+          <a href="https://github.com/your-username/project-repo"
+             target="_blank"
+             class="text-purple-700 font-semibold hover:underline">
+            View Details →
+          </a>
+        </div>
+      </div>
+
+      <!-- Project Card -->
+      <div class="bg-gray-50 rounded-lg shadow overflow-hidden">
+        <img src="https://via.placeholder.com/800x400?text=SQL+Database"
+             alt="SQL Project">
+        <div class="p-6">
+          <h4 class="text-xl font-semibold mb-3">Business Management System</h4>
+          <p class="mb-4">
+            SQL Server database-driven system integrated with Power BI
+            for full operational and analytical reporting.
+          </p>
+          <a href="https://github.com/your-username/project-repo"
+             target="_blank"
+             class="text-purple-700 font-semibold hover:underline">
+            View Details →
+          </a>
+        </div>
+      </div>
+
+      <!-- Project Card -->
+      <div class="bg-gray-50 rounded-lg shadow overflow-hidden">
+        <img src="https://via.placeholder.com/800x400?text=Python+Analysis"
+             alt="Python Analysis">
+        <div class="p-6">
+          <h4 class="text-xl font-semibold mb-3">Data Analysis with Python</h4>
+          <p class="mb-4">
+            Data cleaning, exploratory data analysis, and visualization
+            using Pandas and Matplotlib.
+          </p>
+          <a href="https://github.com/your-username/project-repo"
+             target="_blank"
+             class="text-purple-700 font-semibold hover:underline">
+            View Details →
+          </a>
+        </div>
+      </div>
+
     </div>
-    <div class="card">
-      <h4>Cy
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="py-20 bg-gray-100">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h3 class="text-4xl font-bold mb-8">About Me</h3>
+    <p class="text-lg">
+      I am a Data Analyst specializing in reporting, business intelligence,
+      and SQL-based analytics. I work with Excel, Power BI, SQL Server,
+      and Python to transform raw data into insights that support
+      data-driven decision making.
+      <br><br>
+      Completed Microsoft learning paths:
+      <strong>PL-300 (Power BI Data Analyst)</strong> and
+      <strong>DP-300 (Administering Relational Databases)</strong>.
+    </p>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="py-20 bg-gradient-to-r from-purple-700 to-indigo-600 text-white">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h3 class="text-4xl font-bold mb-10">Contact Me</h3>
+
+    <p class="mb-6">
+      📧 AliDataLab.bi@gmail.com<br>
+      📞 +20XXXXXXXXXX
+    </p>
+
+    <div class="flex justify-center space-x-6 text-2xl">
+      <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="#" target="_blank"><i class="fas fa-briefcase"></i></a>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-gray-900 text-white py-6 text-center">
+  © 2025 AliDataLab • Data Analytics Portfolio
+</footer>
+
+</body>
+</html>
