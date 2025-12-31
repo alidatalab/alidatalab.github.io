@@ -2,40 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Ali Data Lab | Data Analyst Portfolio</title>
+  <title>AliDataLab | Data Analyst Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Tailwind -->
+  <!-- Tailwind CSS -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
-  <!-- Icons -->
+  <!-- Font Awesome -->
   <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 
-<body class="bg-gray-900 text-gray-200">
+<body class="bg-gray-100 text-gray-800">
 
 <!-- ================= HERO ================= -->
 <header class="min-h-screen flex flex-col justify-center items-center text-center px-6
-bg-gradient-to-br from-gray-800 via-indigo-800 to-purple-800">
+bg-gradient-to-br from-indigo-200 via-purple-200 to-blue-200">
 
-  <h1 class="text-6xl font-bold mb-6">AliDataLab</h1>
+  <h1 class="text-6xl font-bold mb-6 text-gray-900">Ali Data Lab</h1>
 
-  <h2 class="text-3xl font-semibold mb-6 text-indigo-200">
+  <h2 class="text-3xl font-semibold mb-6 text-indigo-700">
     Data Analyst – Reporting & Business Intelligence
   </h2>
 
-  <p class="max-w-3xl text-lg opacity-90 mb-10">
-    Turning data into insights through reporting, dashboards, and
-    database-driven analytics.
+  <p class="max-w-3xl text-lg mb-10">
+    Turning data into insights through reporting, dashboards,
+    and database-driven analytics.
   </p>
 
   <div class="flex space-x-6">
     <a href="#projects"
-       class="bg-indigo-400 hover:bg-indigo-500 text-gray-900 px-8 py-3 rounded-full font-semibold">
+       class="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 rounded-full font-semibold">
       View My Work
     </a>
     <a href="#contact"
-       class="border border-indigo-300 text-indigo-200 hover:bg-indigo-300 hover:text-gray-900
+       class="border border-indigo-600 text-indigo-700 hover:bg-indigo-600 hover:text-white
               px-8 py-3 rounded-full font-semibold">
       Contact Me
     </a>
@@ -43,46 +43,62 @@ bg-gradient-to-br from-gray-800 via-indigo-800 to-purple-800">
 </header>
 
 <!-- ================= SKILLS ================= -->
-<section id="skills" class="py-24 bg-gray-900">
+<section id="skills" class="py-24 bg-white">
   <div class="max-w-6xl mx-auto px-6">
     <h3 class="text-4xl font-bold text-center mb-16">Skills</h3>
 
-    <!-- Technical -->
-    <div class="mb-16">
-      <h4 class="text-2xl font-semibold mb-8 text-indigo-300 text-center">
-        Technical Skills
-      </h4>
+    <div class="grid md:grid-cols-2 gap-16 items-start">
 
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-10 text-center text-lg">
-        <div><i class="fas fa-database text-blue-400 text-5xl mb-3"></i><p>SQL Server</p></div>
-        <div><i class="fas fa-chart-line text-yellow-400 text-5xl mb-3"></i><p>Power BI</p></div>
-        <div><i class="fas fa-file-excel text-green-400 text-5xl mb-3"></i><p>Excel</p></div>
-        <div><i class="fab fa-python text-blue-300 text-5xl mb-3"></i><p>Python</p></div>
+      <!-- Technical LEFT -->
+      <div>
+        <h4 class="text-2xl font-semibold mb-8 text-indigo-700">
+          Technical Skills
+        </h4>
+
+        <div class="grid grid-cols-2 gap-8 text-center">
+          <div>
+            <i class="fas fa-database text-blue-600 text-6xl mb-3"></i>
+            <p class="font-semibold">SQL Server</p>
+          </div>
+          <div>
+            <i class="fas fa-chart-line text-yellow-500 text-6xl mb-3"></i>
+            <p class="font-semibold">Power BI</p>
+          </div>
+          <div>
+            <i class="fas fa-file-excel text-green-600 text-6xl mb-3"></i>
+            <p class="font-semibold">Excel</p>
+          </div>
+          <div>
+            <i class="fab fa-python text-blue-500 text-6xl mb-3"></i>
+            <p class="font-semibold">Python</p>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <!-- Core -->
-    <div>
-      <h4 class="text-2xl font-semibold mb-8 text-indigo-300 text-center">
-        Core & Analytical Skills
-      </h4>
+      <!-- Core RIGHT -->
+      <div>
+        <h4 class="text-2xl font-semibold mb-8 text-indigo-700">
+          Core & Analytical Skills
+        </h4>
 
-      <ul class="max-w-3xl mx-auto space-y-3 text-lg">
-        <li>✔ Data Analysis & Insight Generation</li>
-        <li>✔ KPI & Performance Analysis</li>
-        <li>✔ Business Understanding</li>
-        <li>✔ Problem Solving & Analytical Thinking</li>
-        <li>✔ Forecasting & Decision Support</li>
-        <li>✔ Stakeholder Communication</li>
-      </ul>
+        <ul class="space-y-4 text-lg">
+          <li>✔ Data Analysis & Insight Generation</li>
+          <li>✔ KPI & Performance Analysis</li>
+          <li>✔ Business Understanding</li>
+          <li>✔ Problem Solving & Analytical Thinking</li>
+          <li>✔ Forecasting & Decision Support</li>
+          <li>✔ Stakeholder Communication</li>
+        </ul>
+      </div>
+
     </div>
   </div>
 </section>
 
 <!-- ================= CERTIFICATIONS ================= -->
-<section id="certifications" class="py-24 bg-gray-800">
+<section id="certifications" class="py-24 bg-gray-50">
   <div class="max-w-5xl mx-auto px-6 text-center">
-    <h3 class="text-4xl font-bold mb-16">Certifications & Learning</h3>
+    <h3 class="text-4xl font-bold mb-16">Certifications & Training</h3>
 
     <div class="grid md:grid-cols-2 gap-6 text-lg">
       <p>✔ ICDL</p>
@@ -96,29 +112,29 @@ bg-gradient-to-br from-gray-800 via-indigo-800 to-purple-800">
 </section>
 
 <!-- ================= CONTACT ================= -->
-<section id="contact" class="py-24 bg-gradient-to-br from-indigo-800 to-purple-800">
+<section id="contact" class="py-24 bg-gradient-to-br from-indigo-600 to-purple-600 text-white">
   <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16">
 
-    <!-- Direct Contact -->
+    <!-- LEFT: Direct Contact -->
     <div>
       <h3 class="text-3xl font-bold mb-8">Contact</h3>
       <ul class="space-y-6 text-lg">
         <li>
-          <i class="fas fa-envelope text-indigo-300 mr-3"></i>
-          <a href="mailto:AliDataLab.bi@gmail.com">AliDataLab.bi@gmail.com</a>
+          <i class="fas fa-envelope mr-3"></i>
+          <a href="mailto:AliDataLab.bi@gmail.com">Send Email (Outlook)</a>
         </li>
         <li>
-          <i class="fab fa-whatsapp text-green-400 mr-3"></i>
-          <a href="https://wa.me/201234567890">WhatsApp Message</a>
+          <i class="fab fa-whatsapp mr-3"></i>
+          <a href="https://wa.me/201234567890">Send WhatsApp Message</a>
         </li>
         <li>
-          <i class="fab fa-linkedin text-blue-400 mr-3"></i>
+          <i class="fab fa-linkedin mr-3"></i>
           <a href="#">LinkedIn Profile</a>
         </li>
       </ul>
     </div>
 
-    <!-- Freelance -->
+    <!-- RIGHT: Freelance -->
     <div>
       <h3 class="text-3xl font-bold mb-8">Freelance Platforms</h3>
       <ul class="space-y-6 text-lg">
@@ -131,7 +147,7 @@ bg-gradient-to-br from-gray-800 via-indigo-800 to-purple-800">
   </div>
 </section>
 
-<footer class="bg-black text-gray-400 py-6 text-center">
+<footer class="bg-gray-900 text-gray-300 py-6 text-center">
   © 2025 AliDataLab • Data Analyst Portfolio
 </footer>
 
