@@ -26,81 +26,73 @@
 
 <!-- NAVBAR -->
 <nav class="bg-gray-800 fixed w-full z-50 h-16">
-  <div class="max-w-7xl mx-auto px-4 h-full flex items-center justify-between">
+  <div class="max-w-7xl mx-auto px-6 h-full flex items-center">
     <span class="text-2xl font-bold text-white">Aly Sherif</span>
-    <div class="hidden md:flex space-x-6">
-      <a href="#about" class="text-white">About</a>
-      <a href="#skills" class="text-white">Skills</a>
-      <a href="#projects" class="text-white">Projects</a>
-      <a href="#experience" class="text-white">Experience</a>
-      <a href="#certifications" class="text-white">Training</a>
-    </div>
   </div>
 </nav>
 
-<!-- ================= HERO + SKILLS ================= -->
-<section class="min-h-screen gradient-bg pt-16 flex flex-col">
+<!-- ================= HERO ================= -->
+<section class="min-h-screen gradient-bg pt-16 flex items-center">
+  <div class="max-w-7xl mx-auto px-6 w-full flex flex-col md:flex-row items-center">
 
-  <!-- HERO -->
-  <div id="about" class="max-w-7xl mx-auto px-6 flex items-center justify-between text-white py-10">
-    
-    <!-- TEXT -->
-    <div class="w-full md:w-1/2">
-      <h1 class="text-4xl font-bold mb-3">Aly Sherif</h1>
-      <h2 class="text-xl mb-4 opacity-90">Data Analyst</h2>
+    <!-- TEXT LEFT -->
+    <div class="md:w-1/2 text-white text-left">
+      <h1 class="text-4xl font-bold mb-2">Aly Sherif</h1>
+      <h2 class="text-xl mb-3 opacity-90">Data Analyst</h2>
       <p class="opacity-80 mb-6 text-sm max-w-md">
-        Transforming raw data into actionable insights, data visualization, and predictive modeling.
+        Transforming raw data into actionable insights & business decisions
       </p>
 
       <div class="flex space-x-4">
         <a href="#projects" class="bg-white text-purple-600 px-6 py-2 rounded-full font-semibold text-sm">
           View My Work
         </a>
-        <a href="#certifications" class="border-2 border-white text-white px-6 py-2 rounded-full font-semibold text-sm">
-          Get In Touch
+        <a href="#experience" class="border-2 border-white text-white px-6 py-2 rounded-full font-semibold text-sm">
+          Experience
         </a>
       </div>
     </div>
 
-    <!-- IMAGE -->
-    <div class="hidden md:flex w-1/2 justify-center">
+    <!-- IMAGE RIGHT -->
+    <div class="md:w-1/2 flex justify-end mt-10 md:mt-0">
       <img src="assets/profile.jpg"
            class="w-56 h-56 rounded-full object-cover border-4 border-white shadow-lg">
     </div>
 
   </div>
+</section>
 
-  <!-- SKILLS -->
-  <div id="skills" class="flex-1 bg-white flex items-center">
-    <div class="max-w-7xl mx-auto px-6 w-full">
+<!-- ================= SKILLS ================= -->
+<section id="skills" class="min-h-screen bg-white flex items-center">
+  <div class="max-w-7xl mx-auto px-6 w-full">
 
-      <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">Skills</h2>
+    <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Skills</h2>
 
-      <div class="grid md:grid-cols-2 gap-12">
+    <div class="grid md:grid-cols-2 gap-12">
 
-        <div>
-          <h3 class="text-xl font-semibold mb-6">Technical Skills</h3>
-          <div class="space-y-5 text-sm text-gray-700">
-            <p><i class="fas fa-file-excel text-green-600 mr-3"></i><strong>Microsoft Excel</strong> (Power Query, Pivot, Visualization)</p>
-            <p><i class="fas fa-database text-blue-600 mr-3"></i><strong>SQL Server</strong> (Queries, Joins, Procedures)</p>
-            <p><i class="fas fa-chart-line text-yellow-500 mr-3"></i><strong>Power BI</strong> (DAX, Modeling, Dashboards)</p>
-            <p><i class="fab fa-python text-blue-500 mr-3"></i><strong>Python</strong> (Pandas, NumPy, Visualization)</p>
-          </div>
+      <!-- TECH -->
+      <div>
+        <h3 class="text-xl font-semibold mb-6">Technical Skills</h3>
+        <div class="space-y-4 text-sm text-gray-700">
+          <p><i class="fas fa-file-excel text-green-600 mr-3"></i><strong>Microsoft Excel</strong> (Power Query, Pivot, Visualization)</p>
+          <p><i class="fas fa-database text-blue-600 mr-3"></i><strong>SQL Server</strong> (Queries, Joins, Procedures)</p>
+          <p><i class="fas fa-chart-line text-yellow-500 mr-3"></i><strong>Power BI</strong> (DAX, Modeling)</p>
+          <p><i class="fab fa-python text-blue-500 mr-3"></i><strong>Python</strong> (Pandas, NumPy)</p>
         </div>
-
-        <div class="md:pl-16">
-          <h3 class="text-xl font-semibold mb-6">Analytical Skills</h3>
-          <ul class="space-y-3 text-gray-700">
-            <li>Data Analysis & Insights</li>
-            <li>KPI & Performance Tracking</li>
-            <li>Business Understanding</li>
-            <li>Problem Solving</li>
-            <li>Forecasting & Decision Support</li>
-            <li>Stakeholder Communication</li>
-          </ul>
-        </div>
-
       </div>
+
+      <!-- ANALYTICAL -->
+      <div class="md:pl-16">
+        <h3 class="text-xl font-semibold mb-6">Analytical Skills</h3>
+        <ul class="space-y-3 text-gray-700">
+          <li>Data Analysis & Insights</li>
+          <li>KPI & Performance Analysis</li>
+          <li>Business Understanding</li>
+          <li>Problem Solving</li>
+          <li>Decision Support</li>
+        </ul>
+      </div>
+
     </div>
   </div>
 </section>
@@ -114,25 +106,18 @@
     <div class="relative">
       <div id="slider" class="flex transition-transform duration-500">
 
-        <!-- PROJECT -->
         <div class="min-w-full px-6">
           <img src="assets/1 (1).jpg" class="mx-auto rounded-lg mb-6 max-h-80">
           <h4 class="text-2xl font-semibold mb-2">Sales Performance Analysis</h4>
-          <p class="opacity-80 mb-4">Excel & Power BI dashboards for sales KPIs.</p>
-          <a href="https://github.com/yourprofile" target="_blank"
-             class="inline-block border border-indigo-400 text-indigo-400 px-6 py-2 rounded-full">
-            View Details
-          </a>
+          <p class="opacity-80 mb-4">Excel & Power BI dashboards.</p>
+          <a href="https://github.com/yourprofile" class="border px-6 py-2 rounded-full text-indigo-400">View Details</a>
         </div>
 
         <div class="min-w-full px-6">
           <img src="assets/1 (2).jpg" class="mx-auto rounded-lg mb-6 max-h-80">
           <h4 class="text-2xl font-semibold mb-2">Cyber Café Analysis</h4>
           <p class="opacity-80 mb-4">Operational & financial analysis.</p>
-          <a href="https://github.com/yourprofile" target="_blank"
-             class="inline-block border border-indigo-400 text-indigo-400 px-6 py-2 rounded-full">
-            View Details
-          </a>
+          <a href="https://github.com/yourprofile" class="border px-6 py-2 rounded-full text-indigo-400">View Details</a>
         </div>
 
       </div>
@@ -140,34 +125,37 @@
       <button onclick="prevSlide()" class="absolute left-0 top-1/2 -translate-y-1/2 text-4xl">‹</button>
       <button onclick="nextSlide()" class="absolute right-0 top-1/2 -translate-y-1/2 text-4xl">›</button>
     </div>
-
   </div>
 </section>
 
 <!-- ================= EXPERIENCE ================= -->
 <section id="experience" class="min-h-screen bg-white flex items-center">
-  <div class="max-w-5xl mx-auto px-6 w-full text-center">
-    <h3 class="text-4xl font-bold mb-12">Experience</h3>
-    <p class="text-gray-600 text-lg max-w-3xl mx-auto">
-      Practical experience in data analysis, reporting, dashboards, and decision support
-      across business and operational domains.
-    </p>
-  </div>
-</section>
+  <div class="max-w-5xl mx-auto px-6 w-full">
 
-<!-- ================= CERTIFICATIONS ================= -->
-<section id="certifications" class="min-h-screen bg-gray-800 text-white flex items-center">
-  <div class="max-w-5xl mx-auto px-6 w-full text-center">
-    <h3 class="text-4xl font-bold mb-16">Certifications & Training</h3>
-    <div class="grid md:grid-cols-2 gap-8 text-lg opacity-90">
-      <p>Microsoft PL-300</p>
-      <p>Microsoft DP-300</p>
-      <p>AutoCAD Civil 3D</p>
-      <p>ArcGIS Pro</p>
-      <p>GPS & Total Station</p>
-      <p>Training in Air</p>
-      <p>Training in Urban</p>
-      <p>ICDL</p>
+    <h3 class="text-4xl font-bold text-center mb-16">Experience</h3>
+
+    <div class="space-y-12">
+
+      <div class="flex">
+        <div class="w-1/4 text-gray-500 font-semibold">2022 – 2023</div>
+        <div class="w-3/4">
+          <h4 class="text-xl font-bold">Administrative Soldier – Egyptian Army</h4>
+          <p class="text-gray-600 mt-2 text-sm">
+            Administrative data handling, reporting, coordination, and documentation support.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex">
+        <div class="w-1/4 text-gray-500 font-semibold">2019 – 2021</div>
+        <div class="w-3/4">
+          <h4 class="text-xl font-bold">Surveying & Spatial Data (المساحة)</h4>
+          <p class="text-gray-600 mt-2 text-sm">
+            GPS, Total Station, spatial measurements, calculations, and technical reports.
+          </p>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -175,7 +163,6 @@
 <script>
   let currentSlide = 0;
   const slider = document.getElementById("slider");
-
   function updateSlider() {
     slider.style.transform = `translateX(-${currentSlide * 100}%)`;
   }
