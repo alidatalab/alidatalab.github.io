@@ -77,7 +77,6 @@
       <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">Skills</h2>
 
       <div class="grid md:grid-cols-2 gap-12">
-
         <div>
           <h3 class="text-xl font-semibold mb-6">Technical Skills</h3>
           <div class="space-y-5 text-sm text-gray-700">
@@ -99,8 +98,90 @@
             <li>Stakeholder Communication</li>
           </ul>
         </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects" class="min-h-screen bg-gray-900 text-white flex items-center">
+  <div class="max-w-6xl mx-auto px-6 w-full text-center">
+
+    <h3 class="text-4xl font-bold mb-12">Projects</h3>
+
+    <div class="relative">
+      <div id="slider" class="flex transition-transform duration-500">
+
+        <div class="min-w-full px-6">
+          <img src="assets/1 (1).jpg" class="mx-auto rounded-xl mb-6 h-96 w-full max-w-4xl object-cover shadow-xl">
+          <h4 class="text-2xl font-semibold mb-2">Sales Performance Analysis</h4>
+          <p class="opacity-80 mb-4">Excel & Power BI dashboards for sales KPIs.</p>
+          <a href="https://github.com/yourprofile" target="_blank"
+             class="inline-block border border-indigo-400 text-indigo-400 px-6 py-2 rounded-full">
+            View Details
+          </a>
+        </div>
+
+        <div class="min-w-full px-6">
+          <img src="assets/1 (2).jpg" class="mx-auto rounded-xl mb-6 h-96 w-full max-w-4xl object-cover shadow-xl">
+          <h4 class="text-2xl font-semibold mb-2">Cyber Café Analysis</h4>
+          <p class="opacity-80 mb-4">Operational & financial analysis.</p>
+          <a href="https://github.com/yourprofile" target="_blank"
+             class="inline-block border border-indigo-400 text-indigo-400 px-6 py-2 rounded-full">
+            View Details
+          </a>
+        </div>
 
       </div>
+
+      <button onclick="prevSlide()" class="absolute left-0 top-1/2 -translate-y-1/2 text-5xl">‹</button>
+      <button onclick="nextSlide()" class="absolute right-0 top-1/2 -translate-y-1/2 text-5xl">›</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section id="experience" class="min-h-screen bg-gray-50 py-24">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-20">
+      <h3 class="text-4xl font-bold text-gray-900 mb-4">Professional Experience</h3>
+    </div>
+
+    <div class="space-y-20">
+
+      <div class="flex flex-col md:flex-row gap-12">
+        <div class="md:w-1/4">
+          <span class="inline-block bg-indigo-100 text-indigo-700 px-6 py-2 rounded-xl font-semibold">
+            2023 – 2024
+          </span>
+        </div>
+        <div class="md:w-3/4">
+          <h4 class="text-2xl font-bold text-gray-900 mb-2">Administrative & Operations Assistant</h4>
+          <ul class="space-y-3 text-gray-700">
+            <li><i class="fas fa-chevron-right text-indigo-600 mr-3"></i>Managed administrative records</li>
+            <li><i class="fas fa-chevron-right text-indigo-600 mr-3"></i>Prepared operational and financial reports</li>
+            <li><i class="fas fa-chevron-right text-indigo-600 mr-3"></i>Supported management decision making</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="flex flex-col md:flex-row gap-12">
+        <div class="md:w-1/4">
+          <span class="inline-block bg-blue-100 text-blue-700 px-6 py-2 rounded-xl font-semibold">
+            2022 – 2023
+          </span>
+        </div>
+        <div class="md:w-3/4">
+          <h4 class="text-2xl font-bold text-gray-900 mb-2">Surveying and Mapping Specialist</h4>
+          <ul class="space-y-3 text-gray-700">
+            <li><i class="fas fa-chevron-right text-blue-600 mr-3"></i>Survoyer at Egyption Armed Force Engineering Authority, Working on inner Road on Cairo</li>
+            <li><i class="fas fa-chevron-right text-blue-600 mr-3"></i>Survoyer at EL-Shad Company, Working on the Sharm-altur Road</li>
+            <li><i class="fas fa-chevron-right text-blue-600 mr-3"></i>Survoyer at Egyption Armed Force Engineering Authority, Working on the Cairo-Suez Road</li>
+          </ul>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -147,6 +228,43 @@
 
   </div>
 </section>
+
+<!-- ================= CONTACT ================= -->
+<section class="h-screen snap-start bg-gradient-to-br from-indigo-600 to-purple-600 flex items-center text-white">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 w-full">
+
+    <div>
+      <h2 class="text-4xl font-bold mb-8">Contact</h2>
+      <ul class="space-y-4 text-lg">
+        <li><i class="fas fa-envelope mr-3"></i>AliDataLab.bi@gmail.com</li>
+        <li><i class="fab fa-whatsapp mr-3"></i>WhatsApp</li>
+        <li><i class="fab fa-linkedin mr-3"></i>LinkedIn</li>
+      </ul>
+    </div>
+
+    <div>
+      <h2 class="text-4xl font-bold mb-8">Freelance</h2>
+      <ul class="space-y-4 text-lg">
+        <li>Upwork</li>
+        <li>Fiverr</li>
+        <li>Freelancer</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  let index = 0;
+  const slider = document.getElementById("slider");
+  const total = slider.children.length;
+
+  function updateSlider() {
+    slider.style.transform = translateX(-${index * 100}%);
+  }
+  function nextSlide() { index = (index + 1) % total; updateSlider(); }
+  function prevSlide() { index = (index - 1 + total) % total; updateSlider(); }
+</script>
 
 </body>
 </html>
